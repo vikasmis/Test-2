@@ -1,0 +1,30 @@
+{
+  "name": "LOBSTER",
+  "version": "2.19.0-1",
+  "description": "LOBSTER",
+  "repository": {
+    "type": "git"
+    
+  },
+  "//": "Nexus has problems with proxying selenium webdriver, so we cannot download it via the normal automatic way. So we have it placed in a hosted location, and listing it explicitly it does work.",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "protractor": "5.3.1",
+    "protractor-beautiful-reporter": "^1.2.1",
+    "protractor-flake": "^3.3.0",
+    "puppeteer": "1.3.0",
+    "shelljs": "^0.8.1",
+    "systemjs-plugin-babel": "^0.0.25",
+    "webpack": "^2.0.0"
+  },
+ 
+  "scripts": {
+    "regression-test": "npm test",
+    "test": "node regression-tests.js"
+  }
+}
